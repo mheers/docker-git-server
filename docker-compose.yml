@@ -1,0 +1,5 @@
+version: '3'
+services:
+  git:
+    image: mheers/git-server
+    build: .
