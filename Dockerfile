@@ -5,5 +5,3 @@ RUN go install code.gitea.io/tea@v0.9.2
 FROM gitea/gitea:1.19.1
 
 COPY --from=builder /go/bin/tea /usr/local/bin/tea
-
-CMD ["/start.sh"]
